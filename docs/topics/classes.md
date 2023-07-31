@@ -16,7 +16,7 @@ class Empty
 
 ## Constructors
 
-A class in Kotlin can have a _primary constructor_ and one or more _secondary constructors_. The primary constructor is a
+A class in Kotlin has a _primary constructor_ and possibly one or more _secondary constructors_. The primary constructor is a
 part of the class header, and it goes after the class name and optional type parameters.
 
 ```kotlin
@@ -29,8 +29,8 @@ If the primary constructor does not have any annotations or visibility modifiers
 class Person(firstName: String) { /*...*/ }
 ```
 
-The primary constructor cannot contain any code. Initialization code can be placed in _initializer blocks_ prefixed with
-the `init` keyword.
+The primary constructor initializes a class instance and its properties. Initialization code can be placed in _initializer
+blocks_ prefixed with the `init` keyword.
 
 During the initialization of an instance, the initializer blocks are executed in the same order as they appear in the
 class body, interleaved with the property initializers:
